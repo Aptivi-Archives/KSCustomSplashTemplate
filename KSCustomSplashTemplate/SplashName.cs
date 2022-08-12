@@ -38,7 +38,7 @@ namespace KSCustomSplashTemplate
             // could make it display an animation, e.g. indeterminate progress bar, while the kernel is booting.
         }
 
-        public void Report(int Progress, string ProgressReport, int ProgressWritePositionX, int ProgressWritePositionY, int ProgressReportWritePositionX, int ProgressReportWritePositionY, params object[] Vars)
+        public void Report(int Progress, string ProgressReport, params object[] Vars)
         {
             // Choose how would you like to update the progress report. This can be as simple as updating the area where progress percentage and text
             // is written, or you can increment the progress bar. This is called everytime the kernel makes some progress while booting.
